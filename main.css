@@ -1,11 +1,11 @@
 body {
-    background-color: black;
+    background-color: black !important;
     color: white;
 }
 
 /* Style the header and logo */
 header {
-    background-color: black; /* Set the background color of the header to black */
+    background-color: black !important;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -13,11 +13,11 @@ header {
 }
 
 #logo {
-    max-width: 100px; /* Set the maximum width of the logo */
+    max-width: 100px;
 }
 
 h1 {
-    margin: 0; /* Remove default margin for the h1 element */
+    margin: 0;
 }
 
 nav ul {
@@ -36,5 +36,3 @@ nav a {
     text-decoration: none;
     color: white;
 }
-
-/* Add more CSS styles as needed for your specific design */
