@@ -5,7 +5,7 @@ body {
 
 /* Style the header and logo */
 header {
-    background-color: #333; /* Dark background color for the header */
+    background-color: black; /* Set the background color of the header to black */
     padding: 10px;
     display: flex;
     justify-content: space-between;
