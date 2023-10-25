@@ -5,6 +5,19 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* CSS for centering the table */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .center-table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,36 +30,38 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-    <!-- Create a table for the charts with 2 rows and 2 columns -->
-    <table style="width: 80%; height: 80%;">
-        <tr>
-            <td>
-                <div class="chart" style="width: 500px; height: 500px;">
-                    <canvas id="chart1"></canvas>
-                </div>
-            </td>
-            <td>
-                <div class="chart" style="width: 500px; height: 500px;"> <!-- Adjust the size here -->
-                    <canvas id="chart2"></canvas>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="chart" style="width: 500px; height: 500px;">
-                    <canvas id="chart3"></canvas>
-                </div>
-            </td>
-            <td>
-                <div class="chart" style="width: 500px; height: 500px;">
-                    <canvas id="chart4"></canvas>
-                </div>
-            </td>
-        </tr>
-    </table>
-</main>
+        <!-- Center the table in the middle of the screen -->
+        <div class="center-table">
+            <table style="width: 80%; height: 80%;">
+                <tr>
+                    <td>
+                        <div class="chart" style="width: 500px; height: 500px;">
+                            <canvas id="chart1"></canvas>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="chart" style="width: 500px; height: 500px;">
+                            <canvas id="chart2"></canvas>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="chart" style="width: 500px; height: 500px;">
+                            <canvas id="chart3"></canvas>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="chart" style="width: 500px; height: 500px;">
+                            <canvas id="chart4"></canvas>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
 
     
     <footer>
