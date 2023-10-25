@@ -3,54 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="GameHub" content="width=device-width, initial-scale=1.0">
-    <title>GameHub Highlights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
     <style>
-        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+        }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="shop.html">Shop</a></li>
-    </ul>
+    <h1>Video Player</h1>
 
-    <h1>My Video Collection</h1>
+    <video controls>
+        <source src="video-source.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <form id="video-form">
-        <label for="video-title">Video Title:</label>
-        <input type="text" id="video-title" name="videoTitle" required><br>
-
-        <label for="video-description">Video Description:</label><br>
-        <textarea id="video-description" name="videoDescription" rows="4" cols="50" required></textarea><br>
-
-        <label for="video-url">Video URL:</label>
-        <input type="url" id="video-url" name="videoURL" required><br>
-
-        <button type="button" onclick="addVideo()">Add Video</button>
-    </form>
-
-    <ul id="video-list"></ul>
-
-    <script>
-        function addVideo() {
-            var title = document.getElementById("video-title").value;
-            var description = document.getElementById("video-description").value;
-            var url = document.getElementById("video-url").value;
-
-            var videoList = document.getElementById("video-list");
-            var listItem = document.createElement("li");
-            listItem.innerHTML = '<strong>' + title + '</strong><br>' + description + '<br><a href="' + url + '" target="_blank">Watch Video</a>';
-            videoList.appendChild(listItem);
-
-            // Clear the form fields after adding the video
-            document.getElementById("video-title").value = "";
-            document.getElementById("video-description").value = "";
-            document.getElementById("video-url").value = "";
-        }
-    </script>
 </body>
 
 </html>
