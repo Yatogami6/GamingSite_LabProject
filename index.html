@@ -54,73 +54,74 @@
     
     <!-- JavaScript to create and display the charts -->
     <script>
-    // Chart 1: Bar Chart
-    var ctx1 = document.getElementById('chart1').getContext('2d');
-    var chart1 = new Chart(ctx1, {
-        type: 'bar',
-        data: {
-            labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
-            datasets: [{
-                label: 'Bar Chart Data',
-                data: [12, 19, 3, 5, 2],
-                backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
+        // Chart 1: Bar Chart
+        var ctx1 = document.getElementById('chart1').getContext('2d');
+        var chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [250, 380, 190, 420, 300],
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
             }
-        }
-    });
+        });
 
-    // Chart 2: Line Chart
-    var ctx2 = document.getElementById('chart2').getContext('2d');
-    var chart2 = new Chart(ctx2, {
-        type: 'line',
-        data: {
-            labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
-            datasets: [{
-                label: 'Line Chart Data',
-                data: [5, 8, 12, 6, 10],
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 2
-            }]
-        }
-    });
+        // Chart 2: Line Chart
+        var ctx2 = document.getElementById('chart2').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Monthly Revenue',
+                    data: [800, 1100, 900, 1300, 1000],
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2,
+                    pointRadius: 6,
+                    pointBackgroundColor: 'rgba(54, 162, 235, 1)'
+                }]
+            }
+        });
 
-    // Chart 3: Pie Chart
-    var ctx3 = document.getElementById('chart3').getContext('2d');
-    var chart3 = new Chart(ctx3, {
-        type: 'pie',
-        data: {
-            labels: ['Label 1', 'Label 2', 'Label 3'],
-            datasets: [{
-                data: [30, 50, 20],
-                backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)'],
-            }]
-        }
-    });
+        // Chart 3: Pie Chart
+        var ctx3 = document.getElementById('chart3').getContext('2d');
+        var chart3 = new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: ['Category A', 'Category B', 'Category C'],
+                datasets: [{
+                    data: [30, 50, 20],
+                    backgroundColor: ['rgba(255, 99, 132, 0.7)', 'rgba(54, 162, 235, 0.7)', 'rgba(255, 206, 86, 0.7)'],
+                }]
+            }
+        });
 
-    // Chart 4: polarArea Chart
-    var ctx4 = document.getElementById('chart4').getContext('2d');
-    var chart4 = new Chart(ctx4, {
-        type: 'polarArea',
-        data: {
-            labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
-            datasets: [{
-                label: 'Radar Chart Data',
-                data: [50, 25, 70, 40, 60],
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 2,
-                fill: true
-            }]
-        }
-    });
-</script>
-
+        // Chart 4: Radar Chart
+        var ctx4 = document.getElementById('chart4').getContext('2d');
+        var chart4 = new Chart(ctx4, {
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: [75, 80, 90, 70, 85],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
+        });
+    </script>
 </body>
 </html>
