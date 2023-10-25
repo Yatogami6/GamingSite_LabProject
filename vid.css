@@ -58,6 +58,7 @@ td {
 iframe {
     width: 320px;
     height: 180px;
+    margin: 0 auto; /* Center the iframe horizontally */
 }
 
 h3, p {
