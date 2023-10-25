@@ -94,10 +94,10 @@
             }
         });
 
-        // Chart 3: Pie Chart
+        // Chart 3: Polar Area Chart
         var ctx3 = document.getElementById('chart3').getContext('2d');
         var chart3 = new Chart(ctx3, {
-            type: 'pie',
+            type: 'polarArea',
             data: {
                 labels: ['Category A', 'Category B', 'Category C'],
                 datasets: [{
