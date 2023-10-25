@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    <title>Video Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,20 +12,92 @@
             margin: 50px;
         }
 
-        video {
+        table {
             width: 80%;
             max-width: 800px;
+            margin: 0 auto;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        video {
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <h1>Video Player</h1>
+    <h1>Video Gallery</h1>
 
-    <video controls>
-        <source src="video-source.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <table border="1">
+        <tr>
+            <th>Video</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 1 Title</td>
+            <td>This is the description for Video 1.</td>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 2 Title</td>
+            <td>This is the description for Video 2.</td>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 3 Title</td>
+            <td>This is the description for Video 3.</td>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 4 Title</td>
+            <td>This is the description for Video 4.</td>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 5 Title</td>
+            <td>This is the description for Video 5.</td>
+        </tr>
+        <tr>
+            <td>
+                <video controls>
+                    <source src="video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>Video 6 Title</td>
+            <td>This is the description for Video 6.</td>
+        </tr>
+    </table>
 
 </body>
 
