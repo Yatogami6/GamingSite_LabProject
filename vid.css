@@ -1,6 +1,11 @@
 body {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 /* Style the header and logo */
@@ -40,11 +45,13 @@ nav a {
 table {
     width: 80%;
     border-collapse: collapse;
+    border: none; /* Remove table borders */
+    margin: 0 auto; /* Center the table */
 }
 
 td {
-    border: 1px solid #ccc;
     padding: 10px;
+    border: none; /* Remove cell borders */
 }
 
 iframe {
@@ -55,4 +62,3 @@ iframe {
 h3, p {
     text-align: center;
 }
-
