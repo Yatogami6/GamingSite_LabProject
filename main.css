@@ -36,3 +36,10 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+/* Style the chart containers */
+.chart {
+    width: 100%; /* Make the charts fill the entire table cells */
+    padding: 10px;
+    background-color: neon; /* Adjust the color as needed */
+}
