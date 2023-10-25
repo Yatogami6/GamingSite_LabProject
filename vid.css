@@ -1,6 +1,11 @@
 body {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 /* Style the header and logo */
@@ -35,5 +40,24 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+iframe {
+    width: 320px;
+    height: 180px;
+}
+
+h3, p {
+    text-align: center;
 }
 
