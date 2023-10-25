@@ -35,7 +35,7 @@
             </tr>
             <tr>
                 <td>
-                    <div class="chart">
+                    <div class "chart">
                         <canvas id="chart3"></canvas>
                     </div>
                 </td>
@@ -94,10 +94,10 @@
             }
         });
 
-        // Chart 3: Polar Area Chart
+        // Chart 3: Doughnut Chart (formerly Polar Area Chart)
         var ctx3 = document.getElementById('chart3').getContext('2d');
         var chart3 = new Chart(ctx3, {
-            type: 'polarArea',
+            type: 'doughnut',
             data: {
                 labels: ['Category A', 'Category B', 'Category C'],
                 datasets: [{
