@@ -1,11 +1,11 @@
 body {
-    background-color: #0a0613;
+    background-color: black;
     color: white;
 }
 
 /* Style the header and logo */
 header {
-    background-color: black;
+    background-color: #0a0613;
     padding: 10px;
     display: flex;
     justify-content: space-between;
