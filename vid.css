@@ -53,20 +53,13 @@ table {
 td {
     border: none; /* Removed border */
     padding: 10px;
+    overflow: hidden; /* Prevents videos from extending beyond cells */
 }
 
 iframe {
     width: 320px;
     height: 180px;
     margin-right: auto;
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 h3, p {
