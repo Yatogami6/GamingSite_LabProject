@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 /* Style the header and logo */
@@ -37,16 +38,21 @@ nav a {
     color: white;
 }
 
+/* Center the section */
+#center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 table {
     width: 80%;
     border-collapse: collapse;
-    border: none; /* Remove table borders */
-    margin: 0 auto; /* Center the table */
 }
 
 td {
+    border: none; /* Removed border */
     padding: 10px;
-    border: none; /* Remove cell borders */
 }
 
 iframe {
