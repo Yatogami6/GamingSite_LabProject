@@ -12,8 +12,8 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 100%;
-    left: -0.5%;
+    width: 95%;
+    right: 2.5%; /* Adjust the right property to shift it to the left */
     z-index: 1;
 }
 
