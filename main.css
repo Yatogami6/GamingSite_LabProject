@@ -10,6 +10,10 @@ body {
     color: black;
 }
 
+#darkMode {
+    display: none; /* Hide dark mode button initially */
+}
+
 /* Style the header and logo */
 header {
     background-color: #0a0613;
