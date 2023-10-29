@@ -2,10 +2,8 @@
 <html>
 <head>
     <title>Game hub</title>
-    <link rel="stylesheet" href="mainLight.css" id="light-stylesheet">
-    <link rel="stylesheet" href="mainDark.css" id="dark-stylesheet">
+    <link rel="stylesheet" href="mainLight.css" id="theme-stylesheet">
     
-    <script src="dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* CSS for centering the table */
@@ -82,7 +80,7 @@
     <footer>
         <p>&copy; 2023 Game hub. All rights reserved.</p>
     </footer>
-    
+
     <!-- JavaScript to create and display the charts -->
     <script>
         // Chart 1: Bar Chart
@@ -152,6 +150,23 @@
                     backgroundColor: 'rgba(75, 192, 192, 0.3)'
                 }]
             }
+        });
+    </script>
+
+    <!-- JavaScript for the theme toggle -->
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const themeStylesheet = document.getElementById("theme-stylesheet");
+        let isDarkMode = false;
+
+        themeToggle.addEventListener("click", () => {
+            if (isDarkMode) {
+                themeStylesheet.href = "mainLight.css";
+            } else {
+                themeStylesheet.href = "mainDark.css";
+            }
+
+            isDarkMode = !isDarkMode;
         });
     </script>
 </body>
