@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth mode change */
+}
+
+/* Add styles for light mode */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+#darkMode {
+    display: none; /* Hide dark mode button initially */
+}
+
+/* Style the header and logo */
+header {
+    background-color: #0a0613;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo {
+    max-width: 70px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Style the links in the header */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the chart containers */
+.chart {
+    width: 100%; /* Make the charts fill the entire table cells */
+    padding: 2px;
+    background-color: neon; /* Adjust the color as needed */
+}
