@@ -1,12 +1,18 @@
 <script>
   const themeToggle = document.getElementById("theme-toggle");
-  const themeStylesheet = document.getElementById("theme-stylesheet");
+  const lightStylesheet = document.getElementById("light-stylesheet");
+  const darkStylesheet = document.getElementById("dark-stylesheet");
+  let isDarkMode = false;
 
   themeToggle.addEventListener("click", () => {
-    if (themeStylesheet.getAttribute("href") === "mainLight.css") {
-      themeStylesheet.href = "mainDark.css";
+    if (isDarkMode) {
+      lightStylesheet.disabled = false;
+      darkStylesheet.disabled = true;
     } else {
-      themeStylesheet.href = "mainLight.css";
+      lightStylesheet.disabled = true;
+      darkStylesheet.disabled = false;
     }
+
+    isDarkMode = !isDarkMode;
   });
 </script>
