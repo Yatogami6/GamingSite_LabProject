@@ -1,12 +1,12 @@
-// JavaScript to toggle between light and dark mode
-document.getElementById("lightMode").addEventListener("click", function() {
-    document.body.classList.add("light-mode");
-    document.getElementById("lightMode").style.display = "none";
-    document.getElementById("darkMode").style.display = "block";
-});
+<script>
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeStylesheet = document.getElementById("theme-stylesheet");
 
-document.getElementById("darkMode").addEventListener("click", function() {
-    document.body.classList.remove("light-mode");
-    document.getElementById("darkMode").style.display = "none";
-    document.getElementById("lightMode").style.display = "block";
-});
+  themeToggle.addEventListener("click", () => {
+    if (themeStylesheet.getAttribute("href") === "light.css") {
+      themeStylesheet.href = "dark.css";
+    } else {
+      themeStylesheet.href = "light.css";
+    }
+  });
+</script>
