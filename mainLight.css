@@ -9,7 +9,7 @@ header {
     background-color: #0a0613;
     padding: 10px;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
@@ -19,6 +19,7 @@ header {
 
 #logo {
     max-width: 70px;
+    order: 1; /* Change the order to place the logo on the left */
 }
 
 h1 {
@@ -29,7 +30,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Align the navigation items horizontally */
+    display: flex;
+    order: 2; /* Change the order to place the nav on the right */
 }
 
 nav ul li {
