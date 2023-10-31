@@ -12,7 +12,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 95%;
+    width: 100%;
     right: 1%; /* Adjust the right property to shift it to the left */
     z-index: 1;
 }
