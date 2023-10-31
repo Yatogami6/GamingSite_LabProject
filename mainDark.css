@@ -4,16 +4,6 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth mode change */
 }
 
-/* Add styles for light mode */
-.light-mode {
-    background-color: white;
-    color: black;
-}
-
-#darkMode {
-    display: none; /* Hide dark mode button initially */
-}
-
 /* Style the header and logo */
 header {
     background-color: #0a0613;
