@@ -9,13 +9,12 @@ header {
     background-color: #0a0613;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the content horizontally */
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    right: 0%;
 }
 
 #logo {
@@ -30,10 +29,10 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Align the navigation items horizontally */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 10px;
 }
 
