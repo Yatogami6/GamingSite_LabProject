@@ -1,7 +1,6 @@
 body {
     background-color: black;
     color: white;
-    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth mode change */
 }
 
 /* Style the header and logo */
