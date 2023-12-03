@@ -14,6 +14,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
+    font-family: "Sofia", sans-serif;
 }
 
 #logo {
@@ -31,10 +32,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: "Sofia", sans-serif;
 }
 
 nav ul li {
     margin-right: 10px;
+    font-family: "Sofia", sans-serif;
 }
 
 /* Style the links in the header */
