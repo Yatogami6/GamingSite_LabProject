@@ -7,9 +7,9 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    font-family: "Sofia", sans-serif;
 }
 
-/* Style the header and logo */
 header {
     background-color: #0a0613;
     padding: 10px;
@@ -19,16 +19,19 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    right: 1%;
+    right: 0;
     z-index: 1;
+    font-family: "Sofia", sans-serif;
 }
 
 #logo {
+    padding-left: 2%;
     max-width: 70px;
 }
 
 h1 {
     margin: 0;
+    
 }
 
 nav ul {
@@ -52,7 +55,7 @@ nav a {
 .product-table {
     border-collapse: collapse;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     text-align: left;
     border: none; /* Remove table border */
 }
