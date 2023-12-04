@@ -13,29 +13,29 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    right: 0; /* Adjust the right property to shift it to the left */
     z-index: 1;
     font-family: "Sofia", sans-serif;
 }
 
 #logo {
+    padding-left: 2%;
     max-width: 70px;
-    margin-right: auto; /* Push the logo to the left */
-    padding: 10px; /* Add padding to the logo */
 }
 
 h1 {
     margin: 0;
+    font-family: "Sofia", sans-serif;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    font-family: "Sofia", sans-serif;
 }
 
 nav ul li {
+    display: inline;
     margin-right: 10px;
     font-family: "Sofia", sans-serif;
 }
@@ -44,6 +44,7 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
+
 }
 
 /* Style the chart containers */
