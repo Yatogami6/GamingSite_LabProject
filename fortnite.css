@@ -1,26 +1,22 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(89, 104, 155);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     font-family: "Sofia", sans-serif;
 }
 
 header {
-    background-color: #0a0613;
+    background-color: #525a85;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
     width: 100%;
-    right: 0;
-    z-index: 1;
     font-family: "Sofia", sans-serif;
 }
 
@@ -31,7 +27,33 @@ header {
 
 h1 {
     margin: 0;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
     
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 45px;
+    padding: 1%;
+
+}
+h3{
+    margin: 0;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 16px;
+    padding: 1%;
+    
+}
+p {
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    padding-left: 22%;
+    padding-right: 22%;
+    font-size: 24px;
 }
 
 nav ul {
@@ -45,8 +67,24 @@ nav ul li {
     margin-right: 10px;
 }
 
-/* Style the links in the header */
+
 nav a {
     text-decoration: none;
     color: white;
+}
+
+iframe {
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    height: 620px;
+}
+
+.center-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 620px;
+    
 }
