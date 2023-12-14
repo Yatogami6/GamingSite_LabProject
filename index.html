@@ -42,7 +42,7 @@
             <table style="width: 80%; height: 80%;">
                 <tr>
                     <td>
-                        <img src="Images/controlLogo.png" style="height: 200px;" alt="Image 1">
+                        <img src="Valorant/hero1" style="height: 200px;" alt="Image 1">
                         <p>Text 1</p>
                     </td>
                     <td>
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="Images/controlLogo.png" style="height: 200px;" alt="Image 2">
+                        <img src="Valorant/hero3" style="height: 200px;" alt="Image 2">
                         <p>Text 2</p>
                     </td>
                     <td>
@@ -87,39 +87,31 @@
         // Chart 1: Bar Chart
         var ctx1 = document.getElementById('chart1').getContext('2d');
         var chart1 = new Chart(ctx1, {
-            type: 'bar',
+            type: 'radar',
             data: {
-                labels: ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5'],
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
                 datasets: [{
-                    label: 'Sales',
-                    data: [250, 380, 190, 420, 300],
-                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 2
+                    label: 'Character Stats',
+                    data: [75, 80, 90, 70, 85],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
                 }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
             }
         });
 
         // Chart 2: Line Chart
         var ctx2 = document.getElementById('chart2').getContext('2d');
         var chart2 = new Chart(ctx2, {
-            type: 'line',
+            type: 'radar',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May'],
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
                 datasets: [{
-                    label: 'Monthly Revenue',
-                    data: [800, 1100, 900, 1300, 1000],
-                    borderColor: 'rgba(54, 162, 235, 1)',
+                    label: 'Character Stats',
+                    data: [75, 80, 90, 70, 85],
+                    borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 2,
-                    pointRadius: 6,
-                    pointBackgroundColor: 'rgba(54, 162, 235, 1)'
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
                 }]
             }
         });
@@ -127,12 +119,15 @@
         // Chart 3: Doughnut Chart (formerly Polar Area Chart)
         var ctx3 = document.getElementById('chart3').getContext('2d');
         var chart3 = new Chart(ctx3, {
-            type: 'doughnut',
+            type: 'radar',
             data: {
-                labels: ['Category A', 'Category B', 'Category C'],
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
                 datasets: [{
-                    data: [30, 50, 20],
-                    backgroundColor: ['rgba(255, 99, 132, 0.7)', 'rgba(54, 162, 235, 0.7)', 'rgba(255, 206, 86, 0.7)'],
+                    label: 'Character Stats',
+                    data: [75, 80, 90, 70, 85],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
                 }]
             }
         });
