@@ -40,11 +40,23 @@
         <div class="center-table">
             <div style="height: 600px;"></div>
             <table style="width: 80%; height: 80%;">
+                <!-- First Row -->
                 <tr>
                     <td>
-                        <img src="Valorant/hero1" style="height: 200px;" alt="Image 1">
+                        <img src="Valorant/hero1.jpg" style="height: 200px;" alt="Hero 1">
                         <p>Text 1</p>
                     </td>
+                    <td>
+                        <img src="Valorant/hero2.jpg" style="height: 200px;" alt="Hero 2">
+                        <p>Text 2</p>
+                    </td>
+                    <td>
+                        <img src="Valorant/hero3.jpg" style="height: 200px;" alt="Hero 3">
+                        <p>Text 3</p>
+                    </td>
+                </tr>
+                <!-- Second Row -->
+                <tr>
                     <td>
                         <div class="chart" style="width: 400px; height: 200px;">
                             <canvas id="chart1"></canvas>
@@ -55,20 +67,42 @@
                             <canvas id="chart2"></canvas>
                         </div>
                     </td>
+                    <td>
+                        <div class="chart" style="width: 400px; height: 200px;">
+                            <canvas id="chart3"></canvas>
+                        </div>
+                    </td>
                 </tr>
+                <!-- Third Row -->
                 <tr>
                     <td>
-                        <img src="Valorant/hero3" style="height: 200px;" alt="Image 2">
-                        <p>Text 2</p>
+                        <img src="Valorant/hero4.jpg" style="height: 200px;" alt="Hero 4">
+                        <p>Text 4</p>
                     </td>
                     <td>
+                        <img src="Valorant/hero5.jpg" style="height: 200px;" alt="Hero 5">
+                        <p>Text 5</p>
+                    </td>
+                    <td>
+                        <img src="Valorant/hero6.jpg" style="height: 200px;" alt="Hero 6">
+                        <p>Text 6</p>
+                    </td>
+                </tr>
+                <!-- Fourth Row -->
+                <tr>
+                    <td>
                         <div class="chart" style="width: 400px; height: 400px;">
-                            <canvas id="chart3"></canvas>
+                            <canvas id="chart4"></canvas>
                         </div>
                     </td>
                     <td>
                         <div class="chart" style="width: 400px; height: 400px;">
-                            <canvas id="chart4"></canvas>
+                            <canvas id="chart5"></canvas>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="chart" style="width: 400px; height: 400px;">
+                            <canvas id="chart6"></canvas>
                         </div>
                     </td>
                 </tr>
@@ -76,76 +110,46 @@
         </div>
     </main>
 
-
-    
     <footer>
         <p>&copy; 2023 Game hub. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript to create and display the charts -->
     <script>
-        // Chart 1: Bar Chart
+        // Chart 1: Sample Chart (replace with your data)
         var ctx1 = document.getElementById('chart1').getContext('2d');
         var chart1 = new Chart(ctx1, {
-            type: 'radar',
-            data: {
-                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
-                datasets: [{
-                    label: 'Character Stats',
-                    data: [75, 80, 90, 70, 85],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
-                }]
-            }
+            // Your chart configuration for hero1
         });
 
-        // Chart 2: Line Chart
+        // Chart 2: Sample Chart (replace with your data)
         var ctx2 = document.getElementById('chart2').getContext('2d');
         var chart2 = new Chart(ctx2, {
-            type: 'radar',
-            data: {
-                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
-                datasets: [{
-                    label: 'Character Stats',
-                    data: [75, 80, 90, 70, 85],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
-                }]
-            }
+            // Your chart configuration for hero2
         });
 
-        // Chart 3: Doughnut Chart (formerly Polar Area Chart)
+        // Chart 3: Sample Chart (replace with your data)
         var ctx3 = document.getElementById('chart3').getContext('2d');
         var chart3 = new Chart(ctx3, {
-            type: 'radar',
-            data: {
-                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
-                datasets: [{
-                    label: 'Character Stats',
-                    data: [75, 80, 90, 70, 85],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
-                }]
-            }
+            // Your chart configuration for hero3
         });
 
-        // Chart 4: Radar Chart
+        // Chart 4: Sample Chart (replace with your data)
         var ctx4 = document.getElementById('chart4').getContext('2d');
         var chart4 = new Chart(ctx4, {
-            type: 'radar',
-            data: {
-                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
-                datasets: [{
-                    label: 'Character Stats',
-                    data: [75, 80, 90, 70, 85],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
-                }]
-            }
+            // Your chart configuration for hero4
+        });
+
+        // Chart 5: Sample Chart (replace with your data)
+        var ctx5 = document.getElementById('chart5').getContext('2d');
+        var chart5 = new Chart(ctx5, {
+            // Your chart configuration for hero5
+        });
+
+        // Chart 6: Sample Chart (replace with your data)
+        var ctx6 = document.getElementById('chart6').getContext('2d');
+        var chart6 = new Chart(ctx6, {
+            // Your chart configuration for hero6
         });
     </script>
 
