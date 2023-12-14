@@ -114,44 +114,111 @@
         <p>&copy; 2023 Game hub. All rights reserved.</p>
     </footer>
 
+    
     <!-- JavaScript to create and display the charts -->
     <script>
-        // Chart 1: Sample Chart (replace with your data)
+        // Function to generate random values for the charts
+        function generateRandomValues() {
+            return Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+        }
+    
+        // Chart 1: Sample Chart with random values
         var ctx1 = document.getElementById('chart1').getContext('2d');
         var chart1 = new Chart(ctx1, {
-            // Your chart configuration for hero1
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
-
-        // Chart 2: Sample Chart (replace with your data)
+    
+        // Chart 2: Sample Chart with random values
         var ctx2 = document.getElementById('chart2').getContext('2d');
         var chart2 = new Chart(ctx2, {
-            // Your chart configuration for hero2
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
-
-        // Chart 3: Sample Chart (replace with your data)
+    
+        // Chart 3: Sample Chart with random values
         var ctx3 = document.getElementById('chart3').getContext('2d');
         var chart3 = new Chart(ctx3, {
-            // Your chart configuration for hero3
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
-
-        // Chart 4: Sample Chart (replace with your data)
+    
+        // Chart 4: Sample Chart with random values
         var ctx4 = document.getElementById('chart4').getContext('2d');
         var chart4 = new Chart(ctx4, {
-            // Your chart configuration for hero4
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
-
-        // Chart 5: Sample Chart (replace with your data)
+    
+        // Chart 5: Sample Chart with random values
         var ctx5 = document.getElementById('chart5').getContext('2d');
         var chart5 = new Chart(ctx5, {
-            // Your chart configuration for hero5
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
-
-        // Chart 6: Sample Chart (replace with your data)
+    
+        // Chart 6: Sample Chart with random values
         var ctx6 = document.getElementById('chart6').getContext('2d');
         var chart6 = new Chart(ctx6, {
-            // Your chart configuration for hero6
+            type: 'radar',
+            data: {
+                labels: ['Strength', 'Speed', 'Agility', 'Intelligence', 'Endurance'],
+                datasets: [{
+                    label: 'Character Stats',
+                    data: generateRandomValues(),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(75, 192, 192, 0.3)'
+                }]
+            }
         });
     </script>
+
 
     <!-- JavaScript for the theme toggle -->
     <script>
